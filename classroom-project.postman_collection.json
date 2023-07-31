@@ -1,0 +1,618 @@
+{
+	"info": {
+		"_postman_id": "7d082006-7d18-4647-be34-51895540a9a6",
+		"name": "classroom-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25724061"
+	},
+	"item": [
+		{
+			"name": "classroom-add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"classroomname\": \"req.body.classroomname\",\n    \"classroomtype\": \"req.body.classroomtype\",\n    \"seatcount\": \"55\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/classroom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"classroom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classroom-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/classroom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"classroom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classroom-item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/classroom/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"classroom",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classroom-update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"classroomname\": \"req.body.classroomname23\",\n    \"classroomtype\": \"req.body.classroomtype23\",\n    \"seatcount\": \"5523\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/classroom/64b78accb236aac290e07b6a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"classroom",
+						"64b78accb236aac290e07b6a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classroom-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"classroomname\": \"req.body.classroomname2\",\n    \"classroomtype\": \"req.body.classroomtype2\",\n    \"seatcount\": \"552\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/classroom/64b78accb236aac290e07b6a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"classroom",
+						"64b78accb236aac290e07b6a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lesson-add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"req.body.lessonname\",\n    \"duration\": \"66\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lesson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lesson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lesson-list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/lesson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lesson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lesson-update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"req.body.lessonname456\",\n    \"duration\": \"99\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lesson/64b790c59eb3a572941b104b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lesson",
+						"64b790c59eb3a572941b104b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lesson-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lessonname\": \"req.body.lessonname2\",\n    \"duration\": \"662\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lesson/64b790da9eb3a572941b104e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lesson",
+						"64b790da9eb3a572941b104e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fullName\": \"req2.body.fullName2\",\n    \"email\": \"req2@body.email\",\n    \"password\": \"123456\",\n    \"userType\": \"req2.body.userType\",\n    \"avatarUrl\": \"http://req222zž2.body.avatarUrl\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/64aed18d973d88b1a43b84a1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"64aed18d973d88b1a43b84a1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-all-teachers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/Teacher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"Teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userType\": \"Teacher\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/64aee04b5992cea4aa7cc48e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"64aee04b5992cea4aa7cc48e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"req353@body.email\",\n    \"fullName\": \"req353.body.fullName\",\n    \"userType\": \"req33.body.userType\",\n    \"avatarUrl\": \"http://req33.body.avatarUrl\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/64b792609eb3a572941b1056",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"64b792609eb3a572941b1056"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "group-add",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var current_timestamp = new Date();",
+							"postman.setEnvironmentVariable(\"current_timestamp\", current_timestamp.toISOString());",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"plato\",\n    \"starttime\": \"{{current_timestamp}}\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/group",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "group-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/group",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "group-item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/group/64b7c297fe82248c256a686d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"group",
+						"64b7c297fe82248c256a686d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "group-update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"plato\",\n    \"starttime\": \"2020-07-17T11:01:43.813Z\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/group/64b7c5edceaf698e6df34d7a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"group",
+						"64b7c5edceaf698e6df34d7a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "group-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lessonname\": \"req.body.lessonname2\",\n    \"duration\": \"662\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/group/64b7c5edceaf698e6df34d7a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"group",
+						"64b7c5edceaf698e6df34d7a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timetable-add",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var current_timestamp = new Date();",
+							"postman.setEnvironmentVariable(\"current_timestamp\", current_timestamp.toISOString());",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"classroom_id\": \"64af82ecb9b49238c9bc1d33\",\n    \"lesson_id\": \"64b1389a16f2ebeea23574de\",\n    \"teacher_id\": \"64aed11d9273ba5f581a79d7\",\n    \"group_id\": \"64b7c2dcfe82248c256a6873\",\n    \"date\": \"{{current_timestamp}}\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timetable-list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "timetable-delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lessonname\": \"req.body.lessonname2\",\n    \"duration\": \"662\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tt/64b7dfde608516bd835d1336",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tt",
+						"64b7dfde608516bd835d1336"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
