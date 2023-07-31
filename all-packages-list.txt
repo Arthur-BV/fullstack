@@ -1,0 +1,10 @@
+Server:
+  npm i -y bcrypt cors dotenv express express-validator jsonwebtoken mongoose
+  npm i -y --save-dev nodemon
+
+Client:
+  npm i -y @reduxjs/toolkit @types/react-redux axios dotenv jwt-decode react-jss react-redux react-router react-router-dom
+  npm i -y --save-dev @types/jest @types/node @types/react @types/react-dom eslint-plugin-react-hooks prettier
+
+AdminPanel:
+  npm i -y @reduxjs/toolkit @types/react-redux axios dotenv jwt-decode react-jss react-redux react-router react-router-dom
