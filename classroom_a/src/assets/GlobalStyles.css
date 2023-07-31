@@ -1,0 +1,37 @@
+.pre-style {
+  padding-left: 20px;
+}
+
+.span-style {
+  display: inline-block;
+  font-weight: bold;
+  color: red;
+}
+
+.header-style {
+  display: flex;
+  place-items: center start;
+}
+
+.custom-modal {
+  background-color: #c4ffe9;
+  padding: 20px;
+  border-radius: 4px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
